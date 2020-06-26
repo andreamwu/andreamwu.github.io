@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andreamwu Blog 💻</title>
+    <link>https://andreamwu.github.io/</link>
+    <description>Recent content on Andreamwu Blog 💻</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-hans</language>
+    <lastBuildDate>Sat, 27 Jun 2020 00:51:41 +0800</lastBuildDate>
+    
+	<atom:link href="https://andreamwu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown 语法示例</title>
+      <link>https://andreamwu.github.io/post/markdown-syntax/</link>
+      <pubDate>Sat, 27 Jun 2020 00:51:41 +0800</pubDate>
+      
+      <guid>https://andreamwu.github.io/post/markdown-syntax/</guid>
+      <description>目录 [TOC] [TOC] 标题 # 一级标题 ## 二级标题 ### 三级标题 一级标题 二级标题 三级标题 样式 *斜体* **粗体** ==高亮== ~~删除线~~ &amp;gt; 引用 H~2~O 下标 2^10^ 上标 斜体 粗体 ==高亮== 删除线 引用 H~2~O 下标 2^10^ 上标 列表 无序列表 - Item * Item + Item</description>
+    </item>
+    
+    <item>
+      <title>Git 基础使用</title>
+      <link>https://andreamwu.github.io/post/git-basis-use/</link>
+      <pubDate>Sat, 27 Jun 2020 00:50:24 +0800</pubDate>
+      
+      <guid>https://andreamwu.github.io/post/git-basis-use/</guid>
+      <description>账号 配置本地账号 git config --global user.name &amp;quot;yournaem&amp;quot; git config --global user.email &amp;quot;youremail&amp;quot; 配置Github/Gitee ssh key 文档地址 生成ssh key ：ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.com&amp;quot; 设置名称为github_rsa 创建第二个账号：设置名称为gitee_rsa 查看</description>
+    </item>
+    
+    <item>
+      <title>About Hugo</title>
+      <link>https://andreamwu.github.io/about/</link>
+      <pubDate>Thu, 25 Jun 2020 19:15:32 +0800</pubDate>
+      
+      <guid>https://andreamwu.github.io/about/</guid>
+      <description>Learn more and contribute on GitHub.</description>
+    </item>
+    
+    <item>
+      <title>✏️ 文字摘录</title>
+      <link>https://andreamwu.github.io/post/note-excerpt/</link>
+      <pubDate>Thu, 25 Jun 2020 01:38:00 +0800</pubDate>
+      
+      <guid>https://andreamwu.github.io/post/note-excerpt/</guid>
+      <description>弱小和无知不是生存的障碍，傲慢才是。&amp;mdash;-《三体》 向之所欣，俯仰之间，已为陈迹，犹不能不以之兴怀，况修短随化，终期于尽！&amp;mdash;-《兰亭集序》 投射效应：是指人们倾向于按照自己的感受投射</description>
+    </item>
+    
+  </channel>
+</rss>

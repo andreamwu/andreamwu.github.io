@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/andreamwu/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/andreamwu/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/andreamwu/images//favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/andreamwu/images/favicon.ico" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/andreamwu/images/browserconfig.xml" />
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+<title>Git 基础使用 - Andreamwu Blog 💻</title>
+
+
+<meta name="author" content="Andreamwu" />
+
+
+<meta name="description" content="A minimal Hugo theme with nice theme color." />
+
+
+<meta name="keywords" content="git" />
+
+<meta property="og:title" content="Git 基础使用" />
+<meta property="og:description" content="账号 配置本地账号 git config --global user.name &quot;yournaem&quot; git config --global user.email &quot;youremail&quot; 配置Github/Gitee ssh key 文档地址 生成ssh key ：ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot; 设置名称为github_rsa 创建第二个账号：设置名称为gitee_rsa 查看" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://andreamwu.github.io/post/git-basis-use/" />
+<meta property="og:image" content="https://andreamwu.github.io/img/study.jpg"/>
+<meta property="article:published_time" content="2020-06-27T00:50:24+08:00" />
+<meta property="article:modified_time" content="2020-06-27T00:50:24+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://andreamwu.github.io/img/study.jpg"/>
+
+<meta name="twitter:title" content="Git 基础使用"/>
+<meta name="twitter:description" content="账号 配置本地账号 git config --global user.name &quot;yournaem&quot; git config --global user.email &quot;youremail&quot; 配置Github/Gitee ssh key 文档地址 生成ssh key ：ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot; 设置名称为github_rsa 创建第二个账号：设置名称为gitee_rsa 查看"/>
+
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.css" />
+
+
+
+
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+    
+    var fujiThemeData = localStorage.getItem('fuji_data-theme');
+    
+    if (!fujiThemeData) {
+        localStorage.setItem('fuji_data-theme', 'auto');
+    } else {
+        
+        if (fujiThemeData !== 'auto') {
+            document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+        }
+    }
+</script>
+<script data-cfasync="false">
+    
+    function browserDetection(ua) {
+        if (ua.indexOf('MSIE ') > 0 || ua.indexOf('Trident/') > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    var ua = window.navigator.userAgent;
+    if (browserDetection(ua)) {
+        window.location.href('https:\/\/andreamwu.github.io\/ie\/');
+    }
+</script>
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://andreamwu.github.io/">Andreamwu Blog 💻</a>
+            
+            <span class="title-sub">学习与记录</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://andreamwu.github.io/post/git-basis-use/">Git 基础使用</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><ion-icon name="today"></ion-icon>&nbsp;2020-06-27</span><span><ion-icon name="file-tray"></ion-icon>&nbsp;1370 字</span><span><ion-icon name="pricetags"></ion-icon>&nbsp;<a href="/tags/git">git</a>&nbsp;</span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h2 id="账号">账号</h2>
+<h3 id="配置本地账号">配置本地账号</h3>
+<p><code>git config --global user.name &quot;yournaem&quot;</code></p>
+<p><code>git config --global user.email &quot;youremail&quot;</code></p>
+<hr>
+<h3 id="配置githubgitee-ssh-key">配置Github/Gitee ssh key</h3>
+<p><a href="https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh" target="_blank">文档地址</a></p>
+<ul>
+<li>
+<p><strong>生成ssh key</strong> ：<code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</code>  <em>设置名称为<code>github_rsa</code></em></p>
+</li>
+<li>
+<p><strong>创建第二个账号</strong>：<em>设置名称为<code>gitee_rsa</code></em></p>
+</li>
+<li>
+<p><strong>查看列表</strong>：</p>
+<pre><code class="language-git">$ ls -al ~/.ssh
+total 44
+drwxr-xr-x 1 anjun 197610    0  6月 16 16:18 ./
+drwxr-xr-x 1 anjun 197610    0  6月 16 15:32 ../
+-rw-r--r-- 1 anjun 197610    0  6月 16 15:46 config
+-rw-r--r-- 1 anjun 197610 3434  6月 16 16:18 id_gitee_ras
+-rw-r--r-- 1 anjun 197610  742  6月 16 16:18 id_gitee_ras.pub
+-rw-r--r-- 1 anjun 197610 3434  6月 16 16:18 id_github_ras
+-rw-r--r-- 1 anjun 197610  742  6月 16 16:18 id_github_ras.pub
+</code></pre>
+</li>
+<li>
+<p><strong>ssh key 到ssh-agent</strong>：</p>
+<p><em>默认只读取id_rsa，为了让ssh识别新的私钥，需将其添加到ssh-agent中</em>。启动 ssh-agent</p>
+<pre><code class="language-git"># 判断ssh-agent是否已运行
+$ eval &quot;$(ssh-agent -s)&quot;
+Agent pid 520 # 已运行
+  
+$ ssh-add ~/.ssh/id_github_ras
+Enter passphrase for /c/Users/anjun/.ssh/id_github_ras:
+Identity added: /c/Users/anjun/.ssh/id_github_ras (466119821@qq.com)
+  
+$ ssh-add ~/.ssh/id_gitee_ras
+Enter passphrase for /c/Users/anjun/.ssh/id_gitee_ras:
+Identity added: /c/Users/anjun/.ssh/id_gitee_ras (466119821@qq.com)
+</code></pre>
+</li>
+<li>
+<p><strong>配置config</strong>：将ssh key key 配置到各自的地址上</p>
+</li>
+<li>
+<p><strong>配置到GitHub上</strong>：</p>
+<ul>
+<li>
+<p><strong>GitHub添加ssh key</strong>：打开id_github_ras.pub文件，复制内容</p>
+</li>
+<li>
+<p><strong>Gitee添加ssh key</strong>：打开id_gitee_ras.pub文件，复制内容</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="本地配置多个ssh-key">本地配置多个SSH key</h3>
+<ul>
+<li>
+<p><strong>新建config文件</strong>：<code>touch config</code></p>
+<p><del>config的配置没有找到文档说明</del></p>
+<pre><code class="language-config"># GitHub
+Host github.com
+    HostName github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_github_ras
+  
+# Gitee
+Host gitee.com
+    HostName gitee.com
+    PreferredAuthentications publickey
+    User anjunwu
+    IdentityFile ~/.ssh/id_gitee_ras
+# User: username 是对应仓库的用户名
+</code></pre>
+</li>
+<li>
+<p><strong>测试连接</strong>：<code>ssh -T git@github.com</code></p>
+<pre><code class="language-git">$ ssh -T git@gitee.com
+The authenticity of host 'gitee.com (212.64.62.174)' can't be established.
+ECDSA key fingerprint is SHA256:FQGC9Kn/eye1W8icdBgrQp+KkGYoFgbVr17bmjey0Wc.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'gitee.com,212.64.62.174' (ECDSA) to the list of known hosts.
+Hi anjunwu! You've successfully authenticated, but GITEE.COM does not provide shell access.
+  
+$ ssh -T git@github.com
+The authenticity of host 'github.com (52.74.223.119)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,52.74.223.119' (RSA) to the list of known hosts.
+Hi andreamwu! You've successfully authenticated, but GitHub does not provide shell access.
+</code></pre>
+</li>
+<li>
+<p><strong>最后本地文件生成</strong>：<code>known_hosts</code>文件，记录了<code>gitee.com</code> <code>github.com</code> 的信息</p>
+</li>
+</ul>
+<hr>
+<h2 id="git常用命令">Git常用命令</h2>
+<p><a href="https://git-scm.com/book/en/v2" target="_blank">Git Book 地址</a></p>
+<h3 id="git基础">Git基础</h3>
+<ul>
+<li>
+<p><strong>忽略文件的正则表达式</strong></p>
+<blockquote>
+<p>GitHub 有一个十分详细的针对数十种项目及语言的 .gitignore 文件列表， 你可以在
+<a href="https://github.com/github/gitignore">https://github.com/github/gitignore</a> 找到它。</p>
+<p>多个 .gitignore 文件的具体细节超出了本书的范围，更多详情见 man gitignore</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="git分支">Git分支</h3>
+<h3 id="git-使用">Git 使用</h3>
+<ul>
+<li><strong>初始化本地仓库，与远程仓库关联</strong>：</li>
+</ul>
+<hr>
+<h2 id="不同仓库同步">不同仓库同步</h2>
+<h3 id="同步gitee和github">同步Gitee和Github</h3>
+<ul>
+<li>
+<p><strong>仓库导入</strong>：登录Gitee点击右上角<code>➕</code>导入Github仓库即可</p>
+</li>
+<li>
+<p><strong>同步更新</strong>：</p>
+<ul>
+<li>
+<p><strong>方式一</strong>：适合比较少分支的仓库</p>
+<ul>
+<li>
+<p>通过 <code>git remote -v</code> 查看要同步的仓库的远程库列表，如果在列表中没有码云的远程库地址，需要新增一个地址<code>git remote add 远程库名 远程库地址</code></p>
+<pre><code class="language-git">git remote add gitee https://gitee.com/andreamwu/hello-git.git
+# 将本地Github项目推到Gitee
+$ git push gitee master
+</code></pre>
+<p>若代码提交到Github同操作</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>方式二</strong>：强制更新</p>
+<ul>
+<li>如果仅仅同步Github的项目，在Gitee具体仓库界面，仓库名直接点<strong>强制</strong>同步（新代码会覆盖旧代码）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="picgo--typora--gitee-搭建个人图床">picGo + Typora + Gitee 搭建个人图床</h3>
+<ul>
+<li>
+<p><strong>pigGo</strong></p>
+<p><a href="https://picgo.github.io/PicGo-Doc/zh/guide/" target="_blank">picGo文档</a></p>
+<ol>
+<li>
+<p>安装picGo，设置PicGo用Gitee作为图床，搜索插件<code>github-plus</code>安装</p>
+</li>
+<li>
+<p>Gitee建立公开库<code>images</code> ,过后再建私人令牌，来允许<code>PicGo</code>访问并更新<code>images</code>,私人令牌勾选 <code>user_info</code> <code>projects</code></p>
+</li>
+<li>
+<p>在图床设置中，配置 picGo中的插件 <code>github-plus</code> ，填写repo 为 <code>andreamwu/images</code> ,粘贴 token，origin选择gitee即可。配置完成，可以在picGo的 <strong>上传区</strong> 上传图片测试，在 <strong>相册</strong> 中进行管理</p>
+</li>
+<li>
+<p>测试结果</p>
+</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/andreamwu/images/picgoupload/20200627011107.png" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/andreamwu/images/picgoupload/20200627011107.png" alt="多个账号切换测试结果" />
+</a></p>
+</li>
+<li>
+<p><strong>Typora</strong></p>
+<ol>
+<li>
+<p>Typora → 文件 → 偏好设置 (或者快捷键 <code>ctrl + ,</code>)</p>
+</li>
+<li>
+<p><code>图像</code>，选择<code>插入图片时</code>  → <code>上传图片</code>，勾选<code>对网络位置的图片应用上述规则</code>,选择<code>上传服务</code> :<code>PicGo(app)</code>，点击<code>验证图片上传选项</code>。</p>
+</li>
+<li>
+<p><del>验证结果出错了，pigGo无法解析 <code>C:\Program Files</code> 这路径，重新安装pigGo到默认没有文件夹名有空格的路径</del></p>
+</li>
+<li>
+<p>验证出错：<code>Failed to fetch</code>，修改 PigGo设置的端口号，和验证的一致：picGo设置 → 设置server</p>
+</li>
+<li>
+<p>验证图片上传选项结果</p>
+</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/andreamwu/images/picgoupload/2020.png" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/andreamwu/images/picgoupload/2020.png" alt="验证图片上传选项结果" />
+</a></p>
+</li>
+</ul>
+<hr>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        整理自网络<a rel="license" href="" 
+               target="_blank"></a>。 
+        <p></p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>目录</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#账号">账号</a>
+      <ul>
+        <li><a href="#配置本地账号">配置本地账号</a></li>
+        <li><a href="#配置githubgitee-ssh-key">配置Github/Gitee ssh key</a></li>
+        <li><a href="#本地配置多个ssh-key">本地配置多个SSH key</a></li>
+      </ul>
+    </li>
+    <li><a href="#git常用命令">Git常用命令</a>
+      <ul>
+        <li><a href="#git基础">Git基础</a></li>
+        <li><a href="#git分支">Git分支</a></li>
+        <li><a href="#git-使用">Git 使用</a></li>
+      </ul>
+    </li>
+    <li><a href="#不同仓库同步">不同仓库同步</a>
+      <ul>
+        <li><a href="#同步gitee和github">同步Gitee和Github</a></li>
+        <li><a href="#picgo--typora--gitee-搭建个人图床">picGo + Typora + Gitee 搭建个人图床</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>导航</h3>
+        <ul>
+            
+            <li>
+                <a href="/">首页</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">档案</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+            <li>
+                <a href="/search/">搜索</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>标签</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/excerpt/">excerpt</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/md/">md</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>链接</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/andreamwu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://gitee.com/andreamwu" target="_blank"><span>Gitee</span></a>
+            </li>
+            
+            <li>
+                <a href="https://twitter.com/andreamwu" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.instagram.com/andreamwu/" target="_blank"><span>Instagram</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-toggle-mode">
+        <ion-icon name="contrast"></ion-icon>
+    </div>
+    <div class="btn-scroll-top">
+        <ion-icon name="chevron-up"></ion-icon>
+    </div>
+</div>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            <span>&copy; 2020 <a href="https://andreamwu.github.io/">Andreamwu</a> |
+                基于 <a href="https://github.com/amzrk2/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> & <a href="https://gohugo.io/"
+                   target="_blank">Hugo</a> 构建</span>
+        </div>
+    </div>
+</footer>
+    
+    <script async type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.0.1/dist/ionicons/ionicons.esm.js"></script>
+<script async nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.0.1/dist/ionicons/ionicons.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script>
+
+<script defer src="/assets/js/fuji.min.js"></script>
+
+</body>
+
+</html>

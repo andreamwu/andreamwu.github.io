@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/andreamwu/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/andreamwu/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/andreamwu/images//favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/andreamwu/images/favicon.ico" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/andreamwu/images/browserconfig.xml" />
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+<title>Markdown 语法示例 - Andreamwu Blog 💻</title>
+
+
+<meta name="author" content="Andreamwu" />
+
+
+<meta name="description" content="Markdown 语法练习" />
+
+
+<meta name="keywords" content="md" />
+
+<meta property="og:title" content="Markdown 语法示例" />
+<meta property="og:description" content="Markdown 语法练习" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://andreamwu.github.io/post/markdown-syntax/" />
+<meta property="og:image" content="https://andreamwu.github.io/img/study.jpg"/>
+<meta property="article:published_time" content="2020-06-27T00:51:41+08:00" />
+<meta property="article:modified_time" content="2020-06-27T00:51:41+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://andreamwu.github.io/img/study.jpg"/>
+
+<meta name="twitter:title" content="Markdown 语法示例"/>
+<meta name="twitter:description" content="Markdown 语法练习"/>
+
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+<link rel="stylesheet" href="/assets/css/fuji.min.css" />
+
+
+
+
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+    
+    var fujiThemeData = localStorage.getItem('fuji_data-theme');
+    
+    if (!fujiThemeData) {
+        localStorage.setItem('fuji_data-theme', 'auto');
+    } else {
+        
+        if (fujiThemeData !== 'auto') {
+            document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+        }
+    }
+</script>
+<script data-cfasync="false">
+    
+    function browserDetection(ua) {
+        if (ua.indexOf('MSIE ') > 0 || ua.indexOf('Trident/') > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    var ua = window.navigator.userAgent;
+    if (browserDetection(ua)) {
+        window.location.href('https:\/\/andreamwu.github.io\/ie\/');
+    }
+</script>
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://andreamwu.github.io/">Andreamwu Blog 💻</a>
+            
+            <span class="title-sub">学习与记录</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://andreamwu.github.io/post/markdown-syntax/">Markdown 语法示例</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><ion-icon name="today"></ion-icon>&nbsp;2020-06-27</span><span><ion-icon name="file-tray"></ion-icon>&nbsp;396 字</span><span><ion-icon name="pricetags"></ion-icon>&nbsp;<a href="/tags/md">md</a>&nbsp;</span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h2 id="目录">目录</h2>
+<pre><code class="language-markdown">  [TOC]
+</code></pre>
+<p>[TOC]</p>
+<h2 id="标题">标题</h2>
+<pre><code class="language-markdown"># 一级标题
+## 二级标题
+### 三级标题
+</code></pre>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h2 id="样式">样式</h2>
+<pre><code class="language-markdown">*斜体* 
+
+**粗体** 
+
+==高亮==
+
+~~删除线~~
+
+&gt; 引用
+
+H~2~O 下标
+
+2^10^ 上标
+</code></pre>
+<p><em>斜体</em></p>
+<p><strong>粗体</strong></p>
+<p>==高亮==</p>
+<p><del>删除线</del></p>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<p>H~2~O 下标</p>
+<p>2^10^ 上标</p>
+<h2 id="列表">列表</h2>
+<pre><code class="language-markdown">无序列表
+- Item
+  * Item
+    + Item
+
+有序列表
+1. Item 1
+2. Item 2
+3. Item 3
+
+待办列表:
+- [ ] Incomplete item
+- [x] Complete item
+</code></pre>
+<p>无序列表</p>
+<ul>
+<li>Item
+<ul>
+<li>Item
+<ul>
+<li>Item</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>有序列表</p>
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+<p>待办列表:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Incomplete item</li>
+<li><input checked="" disabled="" type="checkbox"> Complete item</li>
+</ul>
+<h2 id="链接">链接</h2>
+<pre><code class="language-markdown">A [link](http://example.com).文字链接
+
+An image: ![Alt](img.jpg) 图片链接
+![20200627000050](https://cdn.jsdelivr.net/gh/andreamwu/images/picgoupload/20200627000050.png)
+
+A sized image: 
+&lt;img src=&quot;https://cdn.jsdelivr.net/gh/andreamwu/images/picgoupload/20200627000050.png&quot; width=&quot;100&quot; height=&quot;30&quot; /&gt;  固定大小的图片
+</code></pre>
+<p>A <a href="http://example.com" target="_blank">link</a>.文字链接</p>
+<p>An image:
+<a href="https://cdn.jsdelivr.net/gh/andreamwu/images/picgoupload/20200627000050.png" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/andreamwu/images/picgoupload/20200627000050.png" alt="20200627000050" />
+</a></p>
+<p>A sized image:
+<img src="https://cdn.jsdelivr.net/gh/andreamwu/images/picgoupload/20200627000050.png" width="100" height="30" /></p>
+<h2 id="代码">代码</h2>
+<p>代码块
+```
+// A code block
+var foo = &lsquo;bar&rsquo;;
+```</p>
+<p>语言标注
+```javascript
+// An highlighted block
+var foo = &lsquo;bar&rsquo;;
+```</p>
+<p>单行代码</p>
+<pre><code>Some `inline code`.
+</code></pre>
+<p>代码块</p>
+<pre><code>// A code block
+var foo = 'bar';
+</code></pre>
+<p>语言标注</p>
+<pre><code class="language-javascript">// An highlighted block
+var foo = 'bar';
+</code></pre>
+<p>单行代码
+Some <code>inline code</code>.</p>
+<h2 id="表格">表格</h2>
+<pre><code class="language-markdown">Item     | Value
+-------- | -----
+Computer | $1600
+Phone    | $12
+Pipe     | $1
+
+
+| Column 1 | Column 2      |
+|:--------:| -------------:|
+| centered | right-aligned |
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td>$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td>$1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">Column 1</th>
+<th align="right">Column 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">centered</td>
+<td align="right">right-aligned</td>
+</tr>
+</tbody>
+</table>
+<h2 id="自定义列表">自定义列表</h2>
+<pre><code class="language-markdown">Markdown
+:  Text-to-HTML conversion tool
+
+Authors
+:  Irving
+:  Curry
+</code></pre>
+<dl>
+<dt>Markdown</dt>
+<dd>Text-to-HTML conversion tool</dd>
+<dt>Authors</dt>
+<dd>Irving</dd>
+<dd>Curry</dd>
+</dl>
+<h2 id="注脚">注脚</h2>
+<pre><code class="language-markdown">Some text with a footnote.[^1]
+
+[^1]: The footnote.
+</code></pre>
+<p>Some text with a footnote.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h2 id="缩写">缩写</h2>
+<pre><code class="language-markdown">Markdown converts text to HTML.
+
+*[HTML]: HyperText Markup Language
+</code></pre>
+<p>Markdown converts text to HTML.</p>
+<p>*[HTML]: HyperText Markup Language</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>The footnote. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        整理自网络<a rel="license" href="" 
+               target="_blank"></a>。 
+        <p></p>
+    </blockquote>
+</div>
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>目录</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#目录">目录</a></li>
+    <li><a href="#标题">标题</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#二级标题">二级标题</a>
+      <ul>
+        <li><a href="#三级标题">三级标题</a></li>
+      </ul>
+    </li>
+    <li><a href="#样式">样式</a></li>
+    <li><a href="#列表">列表</a></li>
+    <li><a href="#链接">链接</a></li>
+    <li><a href="#代码">代码</a></li>
+    <li><a href="#表格">表格</a></li>
+    <li><a href="#自定义列表">自定义列表</a></li>
+    <li><a href="#注脚">注脚</a></li>
+    <li><a href="#缩写">缩写</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>导航</h3>
+        <ul>
+            
+            <li>
+                <a href="/">首页</a>
+            </li>
+            
+            <li>
+                <a href="/archives/">档案</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+            <li>
+                <a href="/search/">搜索</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>标签</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/excerpt/">excerpt</a>
+            </span>
+            
+            <span>
+                <a href="/tags/git/">git</a>
+            </span>
+            
+            <span>
+                <a href="/tags/md/">md</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>链接</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/andreamwu" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://gitee.com/andreamwu" target="_blank"><span>Gitee</span></a>
+            </li>
+            
+            <li>
+                <a href="https://twitter.com/andreamwu" target="_blank"><span>Twitter</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.instagram.com/andreamwu/" target="_blank"><span>Instagram</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-toggle-mode">
+        <ion-icon name="contrast"></ion-icon>
+    </div>
+    <div class="btn-scroll-top">
+        <ion-icon name="chevron-up"></ion-icon>
+    </div>
+</div>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            <span>&copy; 2020 <a href="https://andreamwu.github.io/">Andreamwu</a> |
+                基于 <a href="https://github.com/amzrk2/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> & <a href="https://gohugo.io/"
+                   target="_blank">Hugo</a> 构建</span>
+        </div>
+    </div>
+</footer>
+    
+    <script async type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.0.1/dist/ionicons/ionicons.esm.js"></script>
+<script async nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.0.1/dist/ionicons/ionicons.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script>
+
+<script defer src="/assets/js/fuji.min.js"></script>
+
+</body>
+
+</html>

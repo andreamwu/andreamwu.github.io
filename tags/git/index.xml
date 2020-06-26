@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Andreamwu Blog 💻</title>
+    <link>https://andreamwu.github.io/tags/git/</link>
+    <description>Recent content in git on Andreamwu Blog 💻</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-hans</language>
+    <lastBuildDate>Sat, 27 Jun 2020 00:50:24 +0800</lastBuildDate>
+    
+	<atom:link href="https://andreamwu.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git 基础使用</title>
+      <link>https://andreamwu.github.io/post/git-basis-use/</link>
+      <pubDate>Sat, 27 Jun 2020 00:50:24 +0800</pubDate>
+      
+      <guid>https://andreamwu.github.io/post/git-basis-use/</guid>
+      <description>账号 配置本地账号 git config --global user.name &amp;quot;yournaem&amp;quot; git config --global user.email &amp;quot;youremail&amp;quot; 配置Github/Gitee ssh key 文档地址 生成ssh key ：ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.com&amp;quot; 设置名称为github_rsa 创建第二个账号：设置名称为gitee_rsa 查看</description>
+    </item>
+    
+  </channel>
+</rss>

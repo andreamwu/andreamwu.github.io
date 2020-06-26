@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>excerpt on Andreamwu Blog 💻</title>
+    <link>https://andreamwu.github.io/tags/excerpt/</link>
+    <description>Recent content in excerpt on Andreamwu Blog 💻</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-hans</language>
+    <lastBuildDate>Thu, 25 Jun 2020 01:38:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://andreamwu.github.io/tags/excerpt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>✏️ 文字摘录</title>
+      <link>https://andreamwu.github.io/post/note-excerpt/</link>
+      <pubDate>Thu, 25 Jun 2020 01:38:00 +0800</pubDate>
+      
+      <guid>https://andreamwu.github.io/post/note-excerpt/</guid>
+      <description>弱小和无知不是生存的障碍，傲慢才是。&amp;mdash;-《三体》 向之所欣，俯仰之间，已为陈迹，犹不能不以之兴怀，况修短随化，终期于尽！&amp;mdash;-《兰亭集序》 投射效应：是指人们倾向于按照自己的感受投射</description>
+    </item>
+    
+  </channel>
+</rss>
